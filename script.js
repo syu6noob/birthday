@@ -62,7 +62,7 @@
     //全画面に色をしく。透過率をあげると残像が強くなる
     ctx.clearRect(0,0, canvas.width, canvas.height);
     //紙吹雪の量の調節
-    if(frameId % 3 == 0) {
+    if(frameId % 8 == 0) {
         new Dot(canvas.width*Math.random()-canvas.width+canvas.width*4*Math.random(), -canvas.height/2, getRandom(1, 3),  getRandom(2, 4),"#F94144");
         new Dot(canvas.width*Math.random()+canvas.width-canvas.width*4*Math.random(), -canvas.height/2, getRandom(1, 3),  getRandom(2, 4),"#F8961E");
         new Dot(canvas.width*Math.random()+canvas.width-canvas.width*4*Math.random(), -canvas.height/2, getRandom(1, 3),  getRandom(3, 4),"#F9C74F");
