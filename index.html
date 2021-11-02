@@ -6,14 +6,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お誕生日おめでとう!</title>
 
-  <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Oswald:wght@600&display=swap" rel="stylesheet">
+  
+	<link rel="stylesheet" href="style.css">
+
+	
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
-<body>
+<body><canvas></canvas>
   <div class="wrapper">
-    <span class="eng">HAPPY BIRTHDAY!</span>
-    <span class="date">2021/11/03</span>
-    <h1>YUKI_1103</h1>
-    <p>お誕生日おめでとう!<br>これからもよろしく!</p>
+    <span class="dear animate__animated animate__fadeIn">有希へ</span>
+		<div class="title animate__animated animate__bounceIn animate__delay-2s">
+			<h1 class="title__h1">HAPPY<br>BIRTHDAY!</h1>
+			<div class="title__line"></div>
+		</div>
+    <p class="animate__animated animate__fadeIn animate__delay-4s">お誕生日おめでとう!<br>これからも仲良くしてね!<br>よい1年になりますように!</p>
+    <span class="date animate__animated animate__fadeIn animate__delay-4s">2021/11/03 駿平より</span>
   </div>
+	<canvas></canvas>
+	<div class="prop animate__animated animate__bounceInUp animate__delay-5s">
+		<div class="cake">
+			<div class="rousoku rousoku--honou">
+				<div class="animate__animated animate__pulse animate__infinite">
+					<div></div>
+				</div>
+				<div class="animate__animated animate__pulse animate__infinite">
+					<div></div>
+				</div>
+				<div class="animate__animated animate__pulse animate__infinite">
+					<div></div>
+				</div>
+			</div>
+			<div class="rousoku rousoku--hontai">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="cakebody"></div>
+		</div>
+		<div class="box">
+			<div class="box__ribbon">
+				<div class="box__ribbon--left"></div>
+				<div class="box__ribbon--right"></div>
+			</div>
+			<div class="box__up"></div>
+			<div class="box__under"></div>
+		</div>
+	</div>
+	<script src="script.js"></script>
 </body>
 </html>
